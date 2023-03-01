@@ -1,14 +1,957 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Hello Microverse!</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <title>Bootstrap Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
     <header class="header">
-       <h1>Hello Microverse!</h1>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand d-none" href="#">Navbar</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav col justify-content-center">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
-</body>
+    <div class="card card--bg--image">
+      <div class="card-body text-center m-5">
+        <h1 class="card-title">
+          Hey there. I'm Alex. <br />
+          I'm a software developer
+        </h1>
+        <p class="card-text">
+          I can help you build a product , feature or website Look through some
+          of my work and experience! If you like what you see and have a project
+          you need coded, don't hestiate to contact me.
+        </p>
+        <div class="social">
+          <a href="https://github.com/" class="btn">
+            <svg
+              width="40"
+              height="40"
+              viewBox="0 0 40 40"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g clip-path="url(#clip0_34_2513)">
+                <g clip-path="url(#clip1_34_2513)">
+                  <path
+                    d="M28.9994 17.4611C28.9994 16.3212 28.6334 15.2504 27.9347 14.3178C28.2008 13.4197 28.2674 12.2798 28.2008 10.9672C28.1676 10.4145 27.735 10 27.2027 10C26.9032 10 24.3746 10.0345 22.9106 11.3817C21.6463 11.1399 20.3154 11.1399 19.0178 11.3817C17.5872 10.0345 15.0585 10 14.7258 10C14.1934 10 13.7609 10.4145 13.7276 10.9672C13.6278 12.2798 13.7276 13.4197 13.9938 14.3178C13.2951 15.285 12.9291 16.3558 12.9291 17.4611C12.9291 19.8791 14.7258 22.0553 17.4541 23.0915C17.3543 23.2988 17.2877 23.5406 17.2212 23.7824C14.3265 23.4715 12.9624 20.7427 12.8958 20.639C12.6629 20.1209 12.0641 19.9136 11.565 20.19C11.0659 20.4318 10.8663 21.0535 11.1324 21.5717C11.199 21.7444 13.0289 25.4404 17.0548 25.8549V28.9637C17.0548 29.5509 17.4873 30 18.053 30H23.8755C24.4411 30 24.8737 29.5509 24.8737 28.9637V24.8532C24.8737 24.2314 24.7406 23.6442 24.5077 23.1261C27.2027 22.0553 28.9994 19.9136 28.9994 17.4611Z"
+                    fill="#505F79"
+                  />
+                </g>
+              </g>
+              <defs>
+                <clipPath id="clip0_34_2513">
+                  <rect
+                    width="18"
+                    height="20"
+                    fill="white"
+                    transform="translate(11 10)"
+                  />
+                </clipPath>
+                <clipPath id="clip1_34_2513">
+                  <rect
+                    width="18"
+                    height="20"
+                    fill="white"
+                    transform="translate(11 10)"
+                  />
+                </clipPath>
+              </defs>
+            </svg>
+          </a>
+          <a href="https://www.linkedin.com/" class="btn">
+            <svg
+              width="40"
+              height="40"
+              viewBox="0 0 40 40"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g clip-path="url(#clip0_34_2519)">
+                <path
+                  d="M23.6444 13.0342C20.1556 13.0342 17.2886 15.8618 17.2886 19.379V29.31C17.2886 29.6894 17.5995 29.9997 17.9794 29.9997H21.5718C21.9518 29.9997 22.2627 29.6894 22.2627 29.31V19.6549C22.2627 18.8962 22.8844 18.2756 23.6444 18.2756C24.4043 18.2756 25.0261 18.8962 25.0261 19.6549V29.31C25.0261 29.6894 25.3369 29.9997 25.7169 29.9997H29.3093C29.6893 29.9997 30.0001 29.6894 30.0001 29.31V19.379C30.0001 15.8962 27.1677 13.0342 23.6444 13.0342Z"
+                  fill="#505F79"
+                />
+                <path
+                  d="M14.2832 16.2764H10.6908C10.3109 16.2764 10 16.5867 10 16.966V29.3108C10 29.6902 10.3109 30.0005 10.6908 30.0005H14.2832C14.6632 30.0005 14.9741 29.6902 14.9741 29.3108V16.966C14.9741 16.5867 14.6632 16.2764 14.2832 16.2764Z"
+                  fill="#505F79"
+                />
+                <path
+                  d="M12.487 10C11.1054 10 10 11.1034 10 12.4828C10 13.8621 11.1054 14.9655 12.487 14.9655C13.8687 14.9655 14.9741 13.8621 14.9741 12.4828C14.9741 11.1034 13.8687 10 12.487 10Z"
+                  fill="#505F79"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_34_2519">
+                  <rect
+                    width="20"
+                    height="20"
+                    fill="white"
+                    transform="translate(10 10)"
+                  />
+                </clipPath>
+              </defs>
+            </svg>
+          </a>
+          <a href="https://angel.co/" class="btn">
+            <svg
+              width="40"
+              height="40"
+              viewBox="0 0 40 40"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g clip-path="url(#clip0_34_2529)">
+                <path
+                  d="M19.4643 30C24.1609 30 27.0834 26.5392 27.0834 22.0742C27.0834 20.3908 26.8093 18.8708 24.8984 18.4142C25.3634 17.1408 26.7051 13.4575 26.7051 12.2775C26.7051 11.2383 26.0801 10.3675 24.9659 10.3675C23.1901 10.3675 21.5984 15.5117 21.1001 16.7383C20.7143 15.625 18.9076 10 17.3151 10C16.0776 10 15.4968 10.8942 15.4968 12.0192C15.4968 13.3983 16.8576 16.9725 17.3509 18.3475C17.1009 18.2575 16.8301 18.1792 16.5543 18.1792C15.6226 18.1792 14.6318 19.3158 14.6318 20.2342C14.6318 20.5817 14.8268 21.07 14.9501 21.3942C13.4818 21.785 12.9168 22.7458 12.9168 24.195C12.9126 27.015 15.6359 30 19.4643 30ZM23.4893 14.2192C23.6493 13.7383 24.3293 11.7075 24.9659 11.7075C25.3084 11.7075 25.4001 12.055 25.4001 12.3325C25.4001 13.0783 23.8643 17.2 23.5251 18.1133L22.1718 17.8792L23.4893 14.2192ZM16.7468 11.8875V11.8867C16.7468 11.4217 17.3243 10.1017 18.5893 13.7267L19.9668 17.645C19.3459 17.5942 18.8643 17.5275 18.5584 17.7C18.1243 16.575 16.7468 13.0242 16.7468 11.8875ZM16.6551 19.5308L16.6559 19.5317C17.8218 19.5317 19.3268 23.2267 19.3268 23.7267C19.3268 23.9258 19.1318 24.1717 18.9051 24.1717C18.0726 24.1717 15.8434 21.1675 15.8434 20.355C15.8468 20.0542 16.3484 19.5308 16.6551 19.5308ZM15.3151 22.5892C15.7684 22.5892 17.4759 24.945 17.4759 25.445C17.4759 25.6367 17.1693 25.7692 17.0109 25.7692C16.3701 25.7692 16.1193 25.1633 14.9776 23.7617C13.7951 24.9217 15.7934 27.1558 17.2984 27.1558C18.3368 27.1558 19.0134 26.2108 18.8109 25.515C18.9584 25.515 19.1409 25.5267 19.2768 25.4917C19.3209 26.55 19.6393 27.8117 20.9368 27.9017C20.9368 27.8667 21.0168 27.6242 21.0168 27.6125C21.0168 26.9325 20.5951 26.3392 20.5951 25.6475C20.5951 24.5417 21.4584 23.4717 22.3343 22.8467C22.6526 22.6125 23.0393 22.4675 23.4126 22.335C23.7993 22.1908 24.2093 22.0225 24.5026 21.7333C24.4584 21.2958 24.2759 20.9092 23.8301 20.9092C22.7276 20.9092 19.0301 21.0658 19.0301 19.3583C19.0301 19.0967 19.0343 18.8467 19.7234 18.8467C21.0093 18.8467 24.2734 19.1592 25.2284 19.9833C25.9484 20.6125 26.1959 24.405 23.9943 26.8075L23.9918 26.8083C22.8334 28.0583 21.3526 28.7067 19.6251 28.7067C17.2609 28.7067 15.3934 27.4333 14.4943 25.2575C13.8134 23.5625 14.6459 22.5892 15.3151 22.5892ZM20.0659 21.8858C20.4534 22.0075 20.8509 22.0433 21.2493 22.1208C20.9543 22.3317 20.6926 22.59 20.4409 22.8667C20.3293 22.535 20.1934 22.2108 20.0659 21.8858Z"
+                  fill="#505F79"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_34_2529">
+                  <rect
+                    width="20"
+                    height="20"
+                    fill="white"
+                    transform="translate(10 10)"
+                  />
+                </clipPath>
+              </defs>
+            </svg>
+          </a>
+          <a href="https://twitter.com/" class="btn">
+            <svg
+              width="40"
+              height="40"
+              viewBox="0 0 40 40"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g clip-path="url(#clip0_34_2533)">
+                <g clip-path="url(#clip1_34_2533)">
+                  <path
+                    d="M29.7662 10.37C29.4329 9.97134 28.8662 9.87167 28.4329 10.1707L26.4996 11.4996C25.5996 10.5361 24.3329 10.0046 22.9662 10.0046C20.2662 10.0046 18.0329 12.1972 18.0329 14.9215C18.0329 15.3202 18.0662 15.6856 18.1662 16.0511C15.8329 15.5527 14.4329 13.8584 13.8996 10.8019C13.8329 10.4032 13.5329 10.1042 13.1329 10.0046C12.7662 9.90489 12.3662 10.071 12.1329 10.37C12.0662 10.4365 6.56622 18.0776 14.5329 24.556C13.7662 26.1839 11.4662 27.5793 10.5662 28.0444C10.1329 28.2437 9.93289 28.7088 10.0329 29.1739C10.1329 29.6391 10.5329 29.9381 10.9996 29.9381H12.7329C22.8662 29.9381 27.4662 24.9215 27.5662 13.6923L29.6662 11.6989C30.0662 11.3667 30.0996 10.7687 29.7662 10.37Z"
+                    fill="#505F79"
+                  />
+                </g>
+              </g>
+              <defs>
+                <clipPath id="clip0_34_2533">
+                  <rect
+                    width="20"
+                    height="20"
+                    fill="white"
+                    transform="translate(10 10)"
+                  />
+                </clipPath>
+                <clipPath id="clip1_34_2533">
+                  <rect
+                    width="20"
+                    height="19.9667"
+                    fill="white"
+                    transform="translate(10 9.97168)"
+                  />
+                </clipPath>
+              </defs>
+            </svg>
+          </a>
+          <a href="https://medium.com/" class="btn">
+            <svg
+              width="40"
+              height="40"
+              viewBox="0 0 40 40"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M28.4042 13.8804L30 12.3377V12H24.4717L20.5317 21.9099L16.0492 12H10.2525V12.3377L12.1167 14.6055C12.2983 14.7731 12.3933 15.0181 12.3692 15.2648V24.1768C12.4267 24.4977 12.3233 24.8278 12.1 25.0611L10 27.6328V27.9663H15.9542V27.6286L13.8542 25.0611C13.6267 24.8269 13.5192 24.5027 13.565 24.1768V16.4682L18.7917 27.9705H19.3992L23.8933 16.4682V25.6312C23.8933 25.8728 23.8933 25.9225 23.7367 26.0808L22.12 27.6615V28H29.9633V27.6623L28.405 26.1204C28.2683 26.016 28.1975 25.8408 28.2267 25.6707V14.3301C28.1975 14.1592 28.2675 13.984 28.4042 13.8804Z"
+                fill="#505F79"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+      <a href="#" class="btn"
+        ><svg
+          width="920"
+          height="114"
+          viewBox="0 0 920 114"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <rect x="440" y="50" width="40" height="40" rx="20" fill="white" />
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M453.293 66.2929C453.683 65.9024 454.317 65.9024 454.707 66.2929L460 71.5858L465.293 66.2929C465.683 65.9024 466.317 65.9024 466.707 66.2929C467.098 66.6834 467.098 67.3166 466.707 67.7071L460.707 73.7071C460.317 74.0976 459.683 74.0976 459.293 73.7071L453.293 67.7071C452.902 67.3166 452.902 66.6834 453.293 66.2929Z"
+            fill="#172B4D"
+          />
+          <rect
+            x="440"
+            y="50"
+            width="40"
+            height="40"
+            rx="20"
+            stroke="#DFE1E6"
+          />
+        </svg>
+      </a>
+    </div>
+    <section id="work" class="container text-center mt-5">
+      <h2 class="mt-5">My Recent Works</h2>
+      <div class="row row-cols-1 row-cols-md-3 g-4 mt-3">
+        <div class="col">
+          <div class="card pt-3">
+            <svg
+              class="card-img-top"
+              width="371"
+              height="376"
+              viewBox="0 0 371 376"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect
+                x="0.5"
+                y="0.5"
+                width="370"
+                height="375"
+                rx="8.5"
+                fill="#EBF0EE"
+                stroke="#D0D9D4"
+              />
+            </svg>
+            <div class="card-body text-center">
+              <h3 class="card-title">Multi-Post Stories Gain+Glory</h3>
+              <ul
+                class="list-group list-group-horizontal justify-content-center"
+              >
+                <li class="list-group-item">Ruby on rails</li>
+                <li class="list-group-item">css</li>
+                <li class="list-group-item">JavScript</li>
+                <li class="list-group-item">HTML</li>
+              </ul>
+              <button type="button" class="btn btn-success mt-2">
+                See Project
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card pt-3">
+            <svg
+              class="card-img-top"
+              width="371"
+              height="376"
+              viewBox="0 0 371 376"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect
+                x="0.5"
+                y="0.5"
+                width="370"
+                height="375"
+                rx="8.5"
+                fill="#EBF0EE"
+                stroke="#D0D9D4"
+              />
+            </svg>
+            <div class="card-body text-center">
+              <h3 class="card-title">Multi-Post Stories Gain+Glory</h3>
+              <ul
+                class="list-group list-group-horizontal justify-content-center"
+              >
+                <li class="list-group-item">Ruby on rails</li>
+                <li class="list-group-item">css</li>
+                <li class="list-group-item">JavScript</li>
+                <li class="list-group-item">HTML</li>
+              </ul>
+              <button type="button" class="btn btn-success mt-2">
+                See Project
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card pt-3">
+            <svg
+              class="card-img-top"
+              width="371"
+              height="376"
+              viewBox="0 0 371 376"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect
+                x="0.5"
+                y="0.5"
+                width="370"
+                height="375"
+                rx="8.5"
+                fill="#EBF0EE"
+                stroke="#D0D9D4"
+              />
+            </svg>
+            <div class="card-body text-center">
+              <h3 class="card-title">Multi-Post Stories Gain+Glory</h3>
+              <ul
+                class="list-group list-group-horizontal justify-content-center"
+              >
+                <li class="list-group-item">Ruby on rails</li>
+                <li class="list-group-item">css</li>
+                <li class="list-group-item">JavScript</li>
+                <li class="list-group-item">HTML</li>
+              </ul>
+              <button type="button" class="btn btn-success mt-2">
+                See Project
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card pt-3">
+            <svg
+              class="card-img-top"
+              width="371"
+              height="376"
+              viewBox="0 0 371 376"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect
+                x="0.5"
+                y="0.5"
+                width="370"
+                height="375"
+                rx="8.5"
+                fill="#EBF0EE"
+                stroke="#D0D9D4"
+              />
+            </svg>
+            <div class="card-body text-center">
+              <h3 class="card-title">Multi-Post Stories Gain+Glory</h3>
+              <ul
+                class="list-group list-group-horizontal justify-content-center"
+              >
+                <li class="list-group-item">Ruby on rails</li>
+                <li class="list-group-item">css</li>
+                <li class="list-group-item">JavScript</li>
+                <li class="list-group-item">HTML</li>
+              </ul>
+              <button type="button" class="btn btn-success mt-2">
+                See Project
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card pt-3">
+            <svg
+              class="card-img-top"
+              width="371"
+              height="376"
+              viewBox="0 0 371 376"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect
+                x="0.5"
+                y="0.5"
+                width="370"
+                height="375"
+                rx="8.5"
+                fill="#EBF0EE"
+                stroke="#D0D9D4"
+              />
+            </svg>
+            <div class="card-body text-center">
+              <h3 class="card-title">Multi-Post Stories Gain+Glory</h3>
+              <ul
+                class="list-group list-group-horizontal justify-content-center"
+              >
+                <li class="list-group-item">Ruby on rails</li>
+                <li class="list-group-item">css</li>
+                <li class="list-group-item">JavScript</li>
+                <li class="list-group-item">HTML</li>
+              </ul>
+              <button type="button" class="btn btn-success mt-2">
+                See Project
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card pt-3">
+            <svg
+              class="card-img-top"
+              width="371"
+              height="376"
+              viewBox="0 0 371 376"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect
+                x="0.5"
+                y="0.5"
+                width="370"
+                height="375"
+                rx="8.5"
+                fill="#EBF0EE"
+                stroke="#D0D9D4"
+              />
+            </svg>
+            <div class="card-body text-center">
+              <h3 class="card-title">Multi-Post Stories Gain+Glory</h3>
+              <ul
+                class="list-group list-group-horizontal justify-content-center"
+              >
+                <li class="list-group-item">Ruby on rails</li>
+                <li class="list-group-item">css</li>
+                <li class="list-group-item">JavScript</li>
+                <li class="list-group-item">HTML</li>
+              </ul>
+              <button type="button" class="btn btn-success mt-2">
+                See Project
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="text-center mt-5 container" id="about">
+      <div class="padding-about">
+        <h2 class="card-title mt-5">About me</h2>
+        <p class="card-text mt-3">
+          I can help you build a product , feature or website Look through some
+          of my work and experience! If you like what you see and have a project
+          you need coded, don’t hestiate to contact me.
+        </p>
+        <button type="button" class="btn btn-success">Get My Resume</button>
+      </div>
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col card text-white">
+          <img src="./img/img_plaholder.png" class="card-img" alt="..." />
+          <div class="card-img-overlay ali">
+            <svg
+              width="369"
+              height="144"
+              viewBox="0 0 369 144"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g filter="url(#filter0_d_34_2398)">
+                <circle cx="185" cy="64" r="40" fill="white" />
+              </g>
+              <g clip-path="url(#clip0_34_2398)">
+                <path
+                  d="M197.27 62.8957H206.704C206.851 62.8957 206.999 62.7486 206.999 62.6014C206.336 52.7419 199.186 44.5747 189.753 42.5145C189.532 42.4409 189.31 42.7352 189.532 42.9559C193.954 47.8857 196.754 54.9492 197.049 62.675C196.975 62.8221 197.123 62.8957 197.27 62.8957Z"
+                  fill="#091E42"
+                />
+                <path
+                  d="M185.184 42C185.11 42 185.037 42 184.963 42C184.889 42 184.816 42 184.742 42C179.067 46.3411 175.529 54.0669 175.161 62.602C175.161 62.7492 175.308 62.8963 175.455 62.8963H194.471C194.618 62.8963 194.765 62.7492 194.765 62.602C194.471 54.0669 190.859 46.3411 185.184 42Z"
+                  fill="#36B37E"
+                />
+                <path
+                  d="M175.455 65.1035C175.308 65.1035 175.161 65.2507 175.161 65.3978C175.529 74.0065 179.067 81.6587 184.742 85.9998C184.816 85.9998 184.889 85.9998 184.963 85.9998C185.037 85.9998 185.11 85.9998 185.184 85.9998C190.859 81.6587 194.397 73.9329 194.765 65.3978C194.765 65.2507 194.618 65.1035 194.471 65.1035H175.455Z"
+                  fill="#091E42"
+                />
+                <path
+                  d="M196.975 65.3243C196.681 73.05 193.954 80.1136 189.532 85.0433C189.384 85.2641 189.532 85.5584 189.753 85.4848C199.186 83.4246 206.409 75.2574 206.999 65.3978C206.999 65.2507 206.851 65.1035 206.704 65.1035H197.27C197.123 65.1035 196.975 65.2507 196.975 65.3243Z"
+                  fill="#36B37E"
+                />
+                <path
+                  d="M172.728 65.1035H163.294C163.147 65.1035 163 65.2507 163 65.3978C163.589 75.2574 170.812 83.4246 180.246 85.4848C180.467 85.5584 180.688 85.2641 180.467 85.0433C175.971 80.1136 173.244 73.05 172.949 65.3243C173.023 65.2507 172.876 65.1035 172.728 65.1035Z"
+                  fill="#36B37E"
+                />
+                <path
+                  d="M173.023 62.675C173.318 54.9492 176.045 47.8857 180.467 42.9559C180.614 42.7352 180.467 42.4409 180.246 42.5145C170.812 44.5747 163.589 52.7419 163 62.6014C163 62.7486 163.147 62.8957 163.294 62.8957H172.728C172.876 62.8957 173.023 62.8221 173.023 62.675Z"
+                  fill="#091E42"
+                />
+              </g>
+              <defs>
+                <filter
+                  id="filter0_d_34_2398"
+                  x="121"
+                  y="16"
+                  width="128"
+                  height="128"
+                  filterUnits="userSpaceOnUse"
+                  color-interpolation-filters="sRGB"
+                >
+                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feColorMatrix
+                    in="SourceAlpha"
+                    type="matrix"
+                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                    result="hardAlpha"
+                  />
+                  <feOffset dy="16" />
+                  <feGaussianBlur stdDeviation="12" />
+                  <feColorMatrix
+                    type="matrix"
+                    values="0 0 0 0 0.145573 0 0 0 0 0.185183 0 0 0 0 0.5375 0 0 0 0.08 0"
+                  />
+                  <feBlend
+                    mode="normal"
+                    in2="BackgroundImageFix"
+                    result="effect1_dropShadow_34_2398"
+                  />
+                  <feBlend
+                    mode="normal"
+                    in="SourceGraphic"
+                    in2="effect1_dropShadow_34_2398"
+                    result="shape"
+                  />
+                </filter>
+                <clipPath id="clip0_34_2398">
+                  <rect
+                    width="44"
+                    height="44"
+                    fill="white"
+                    transform="translate(163 42)"
+                  />
+                </clipPath>
+              </defs>
+            </svg>
+            <h5 class="card-title text-dark">Card title</h5>
+            <ul class="list-group list-group-horizontal justify-content-center">
+              <li class="list-group-item">JavaScript</li>
+              <li class="list-group-item">Ruby</li>
+              <li class="list-group-item">HTML</li>
+              <li class="list-group-item">CSS</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col card text-white">
+          <img src="./img/img_plaholder.png" class="card-img" alt="..." />
+          <div class="card-img-overlay">
+            <svg
+              width="369"
+              height="144"
+              viewBox="0 0 369 144"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g filter="url(#filter0_d_34_2443)">
+                <circle cx="185" cy="64" r="40" fill="white" />
+              </g>
+              <path
+                d="M177 68.7999C177 69.1999 177.2 69.5999 177.6 69.7999L182.6 72.7999C183.2 73.1999 183.8 72.7999 183.8 72.1999V66.5999C183.8 66.3999 183.6 65.9999 183.4 65.9999L178.2 62.5999C177.8 62.3999 177 62.7999 177 63.3999V68.7999Z"
+                fill="#091E42"
+              />
+              <path
+                d="M184.6 66.3997V71.9997C184.6 72.5997 185.2 72.9997 185.8 72.5997L190.8 69.5997C191.2 69.3997 191.4 68.9997 191.4 68.5997V63.3997C191.4 62.7997 190.8 62.3997 190.2 62.7997L185 65.5997C184.8 65.7997 184.6 65.9997 184.6 66.3997Z"
+                fill="#091E42"
+              />
+              <path
+                d="M190.2 61.7998L184.6 64.9998C184.4 65.1998 184 65.1998 183.8 64.9998L178.2 61.7998C177.6 61.3998 177.6 60.7998 178.2 60.3998L183.8 57.1998C184 56.9998 184.4 56.9998 184.6 57.1998L190.2 60.3998C190.8 60.5998 190.8 61.3998 190.2 61.7998Z"
+                fill="#36B37E"
+              />
+              <path
+                d="M165 80.0001C165 80.4001 165.2 80.8001 165.6 81.0001L170.6 84.0001C171.2 84.4001 171.8 84.0001 171.8 83.4001V77.8001C171.8 77.6001 171.6 77.2001 171.4 77.2001L166.2 74.2001C165.6 73.8001 165 74.2001 165 74.8001V80.0001V80.0001Z"
+                fill="#091E42"
+              />
+              <path
+                d="M172.6 77.4003V83.0003C172.6 83.6003 173.2 84.0003 173.8 83.6003L178.8 80.6003C179.2 80.4003 179.4 80.0003 179.4 79.6003V74.0003C179.4 73.4003 178.8 73.0003 178.2 73.4003L173 76.8003C172.8 77.0003 172.6 77.2003 172.6 77.4003Z"
+                fill="#091E42"
+              />
+              <path
+                d="M178.2 72.7998L172.6 75.9998C172.4 76.1998 172 76.1998 171.8 75.9998L166.2 72.7998C165.6 72.3998 165.6 71.7998 166.2 71.3998L171.8 68.1998C172 67.9998 172.4 67.9998 172.6 68.1998L178.2 71.3998C178.6 71.7998 178.6 72.5998 178.2 72.7998Z"
+                fill="#36B37E"
+              />
+              <path
+                d="M189.2 80.0001C189.2 80.4001 189.4 80.8001 189.8 81.0001L194.8 84.0001C195.4 84.4001 196 84.0001 196 83.4001V77.8001C196 77.6001 195.8 77.2001 195.6 77.2001L190.4 74.2001C189.8 73.8001 189.2 74.2001 189.2 74.8001V80.0001Z"
+                fill="#091E42"
+              />
+              <path
+                d="M196.6 77.4003V83.0003C196.6 83.6003 197.2 84.0003 197.8 83.6003L202.8 80.6003C203.2 80.4003 203.4 80.0003 203.4 79.6003V74.0003C203.4 73.4003 202.8 73.0003 202.2 73.4003L197 76.8003C196.8 77.0003 196.6 77.2003 196.6 77.4003Z"
+                fill="#091E42"
+              />
+              <path
+                d="M202.2 72.7998L196.6 75.9998C196.4 76.1998 196 76.1998 195.8 75.9998L190.2 72.7998C189.6 72.3998 189.6 71.7998 190.2 71.3998L195.8 68.1998C196 67.9998 196.4 67.9998 196.6 68.1998L202.2 71.3998C202.8 71.7998 202.8 72.5998 202.2 72.7998Z"
+                fill="#36B37E"
+              />
+              <path
+                d="M165 57.8005C165 58.2005 165.2 58.6005 165.6 58.8005L170.6 61.8005C171 62.0005 171.8 61.6005 171.8 61.0005V55.2005C171.8 55.0005 171.6 54.6005 171.4 54.6005L166.2 51.6005C165.6 51.4005 165 51.6005 165 52.4005V57.8005Z"
+                fill="#091E42"
+              />
+              <path
+                d="M172.6 55.1997V60.7997C172.6 61.3997 173.2 61.7997 173.8 61.3997L178.8 58.3997C179.2 58.1997 179.4 57.7997 179.4 57.3997V52.3997C179.4 51.7997 178.8 51.3997 178.2 51.7997L173 54.5997C172.8 54.7997 172.6 54.9997 172.6 55.1997Z"
+                fill="#091E42"
+              />
+              <path
+                d="M178.2 50.6L172.6 53.8C172.4 54 172 54 171.8 53.8L166.2 50.6C165.6 50.2 165.6 49.6 166.2 49.2L171.8 46C172 46 172.4 46 172.6 46.2L178.2 49.4C178.6 49.6 178.6 50.4 178.2 50.6Z"
+                fill="#36B37E"
+              />
+              <path
+                d="M189.2 57.8005C189.2 58.2005 189.4 58.6005 189.8 58.8005L194.8 61.8005C195.4 62.2005 196 61.8005 196 61.2005V55.2005C196 55.0005 195.8 54.6005 195.6 54.6005L190.4 51.6005C189.8 51.2005 189.2 51.6005 189.2 52.2005V57.8005Z"
+                fill="#091E42"
+              />
+              <path
+                d="M196.6 55.1997V60.7997C196.6 61.3997 197.2 61.7997 197.8 61.3997L202.8 58.3997C203.2 58.1997 203.4 57.7997 203.4 57.3997V52.3997C203.4 51.7997 202.8 51.3997 202.2 51.7997L197 54.5997C196.8 54.7997 196.6 54.9997 196.6 55.1997Z"
+                fill="#091E42"
+              />
+              <path
+                d="M202.2 50.5998L196.6 53.9998C196.4 53.9998 196.2 53.9998 195.8 53.9998L190.2 50.7998C189.6 50.3998 189.6 49.7998 190.2 49.3998L195.8 46.1998C196 45.9998 196.4 45.9998 196.6 46.1998L202.2 49.3998C202.8 49.5998 202.8 50.3998 202.2 50.5998Z"
+                fill="#36B37E"
+              />
+              <defs>
+                <filter
+                  id="filter0_d_34_2443"
+                  x="121"
+                  y="16"
+                  width="128"
+                  height="128"
+                  filterUnits="userSpaceOnUse"
+                  color-interpolation-filters="sRGB"
+                >
+                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feColorMatrix
+                    in="SourceAlpha"
+                    type="matrix"
+                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                    result="hardAlpha"
+                  />
+                  <feOffset dy="16" />
+                  <feGaussianBlur stdDeviation="12" />
+                  <feColorMatrix
+                    type="matrix"
+                    values="0 0 0 0 0.145573 0 0 0 0 0.185183 0 0 0 0 0.5375 0 0 0 0.08 0"
+                  />
+                  <feBlend
+                    mode="normal"
+                    in2="BackgroundImageFix"
+                    result="effect1_dropShadow_34_2443"
+                  />
+                  <feBlend
+                    mode="normal"
+                    in="SourceGraphic"
+                    in2="effect1_dropShadow_34_2443"
+                    result="shape"
+                  />
+                </filter>
+              </defs>
+            </svg>
+            <h4 class="card-title text-dark">Card title</h4>
+            <ul class="list-group list-group-horizontal">
+              <li class="list-group-item">Bootstrap</li>
+              <li class="list-group-item">Ruby on rails</li>
+              <li class="list-group-item">RSpec</li>
+              <li class="list-group-item">Capybara</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col card text-white">
+          <img src="./img/img_plaholder.png" class="card-img" alt="..." />
+          <div class="card-img-overlay">
+            <svg
+              width="369"
+              height="144"
+              viewBox="0 0 369 144"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g filter="url(#filter0_d_34_2479)">
+                <circle cx="185" cy="64" r="40" fill="white" />
+              </g>
+              <g clip-path="url(#clip0_34_2479)">
+                <path
+                  d="M181.2 44H190.2C191.4 44 192.2 45.2 192 46.4L187.6 60.8H192.2C193.6 60.8 194.6 62.2 194 63.6L185 82C184.6 82.6 183.6 82.4 183.8 81.6L186 67.6H179C177.8 67.6 177 66.6 177.2 65.4L179.4 45.8C179.4 44.8 180.2 44 181.2 44Z"
+                  fill="#36B37E"
+                />
+                <path
+                  d="M163.437 56.6706L166.644 54.8185C167.072 54.5716 167.608 54.8406 167.787 55.3153L169.222 61.4238L170.862 60.4772C171.361 60.1891 172.009 60.4892 172.088 61.1185L172.718 69.6189C172.701 69.9181 172.303 70.0516 172.207 69.7214L170.071 64.2101L167.576 65.6506C167.148 65.8975 166.654 65.7008 166.475 65.2261L163.171 57.6914C162.962 57.33 163.08 56.8764 163.437 56.6706Z"
+                  fill="#091E42"
+                />
+                <path
+                  d="M207.626 56.6706L204.418 54.8185C203.99 54.5716 203.455 54.8406 203.276 55.3153L201.84 61.4238L200.2 60.4772C199.701 60.1891 199.053 60.4892 198.975 61.1185L198.344 69.6189C198.361 69.9181 198.76 70.0516 198.855 69.7214L200.992 64.2101L203.487 65.6506C203.914 65.8975 204.408 65.7008 204.587 65.2261L207.892 57.6914C208.1 57.33 207.982 56.8764 207.626 56.6706Z"
+                  fill="#091E42"
+                />
+              </g>
+              <defs>
+                <filter
+                  id="filter0_d_34_2479"
+                  x="121"
+                  y="16"
+                  width="128"
+                  height="128"
+                  filterUnits="userSpaceOnUse"
+                  color-interpolation-filters="sRGB"
+                >
+                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feColorMatrix
+                    in="SourceAlpha"
+                    type="matrix"
+                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                    result="hardAlpha"
+                  />
+                  <feOffset dy="16" />
+                  <feGaussianBlur stdDeviation="12" />
+                  <feColorMatrix
+                    type="matrix"
+                    values="0 0 0 0 0.145573 0 0 0 0 0.185183 0 0 0 0 0.5375 0 0 0 0.08 0"
+                  />
+                  <feBlend
+                    mode="normal"
+                    in2="BackgroundImageFix"
+                    result="effect1_dropShadow_34_2479"
+                  />
+                  <feBlend
+                    mode="normal"
+                    in="SourceGraphic"
+                    in2="effect1_dropShadow_34_2479"
+                    result="shape"
+                  />
+                </filter>
+                <clipPath id="clip0_34_2479">
+                  <rect
+                    width="48"
+                    height="48"
+                    fill="white"
+                    transform="translate(161 40)"
+                  />
+                </clipPath>
+              </defs>
+            </svg>
+
+            <h5 class="card-title text-dark">Card title</h5>
+            <ul class="list-group list-group-horizontal justify-content-center">
+              <li class="list-group-item">Codekit</li>
+              <li class="list-group-item">GitHub</li>
+              <li class="list-group-item">Codepen</li>
+              <li class="list-group-item">Gitlab</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="container pt-5 pb-5">
+      <div class="row align-items-center">
+        <p class="h1 col-6">
+          I'm always interested in hearing about new projects, so if you'd like
+          to chat please get in touch.
+        </p>
+        <form class="row col-6">
+          <div class="row g-3">
+            <div class="col-12">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Full name"
+                aria-label="First name"
+              />
+            </div>
+            <div class="col-12">
+              <input
+                type="email"
+                class="form-control"
+                placeholder="Email"
+                aria-label="Last name"
+              />
+            </div>
+            <div class="col-12">
+              <textarea
+                class="form-control"
+                placeholder="Leave a comment here"
+                id="floatingTextarea2"
+                style="height: 100px"
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn-success col-3 ms-2">
+              Get in touch
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+    <footer>
+      <hr />
+      <div class="social text-center">
+        <a href="https://github.com/" class="btn">
+          <svg
+            width="40"
+            height="40"
+            viewBox="0 0 40 40"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g clip-path="url(#clip0_34_2513)">
+              <g clip-path="url(#clip1_34_2513)">
+                <path
+                  d="M28.9994 17.4611C28.9994 16.3212 28.6334 15.2504 27.9347 14.3178C28.2008 13.4197 28.2674 12.2798 28.2008 10.9672C28.1676 10.4145 27.735 10 27.2027 10C26.9032 10 24.3746 10.0345 22.9106 11.3817C21.6463 11.1399 20.3154 11.1399 19.0178 11.3817C17.5872 10.0345 15.0585 10 14.7258 10C14.1934 10 13.7609 10.4145 13.7276 10.9672C13.6278 12.2798 13.7276 13.4197 13.9938 14.3178C13.2951 15.285 12.9291 16.3558 12.9291 17.4611C12.9291 19.8791 14.7258 22.0553 17.4541 23.0915C17.3543 23.2988 17.2877 23.5406 17.2212 23.7824C14.3265 23.4715 12.9624 20.7427 12.8958 20.639C12.6629 20.1209 12.0641 19.9136 11.565 20.19C11.0659 20.4318 10.8663 21.0535 11.1324 21.5717C11.199 21.7444 13.0289 25.4404 17.0548 25.8549V28.9637C17.0548 29.5509 17.4873 30 18.053 30H23.8755C24.4411 30 24.8737 29.5509 24.8737 28.9637V24.8532C24.8737 24.2314 24.7406 23.6442 24.5077 23.1261C27.2027 22.0553 28.9994 19.9136 28.9994 17.4611Z"
+                  fill="#505F79"
+                />
+              </g>
+            </g>
+            <defs>
+              <clipPath id="clip0_34_2513">
+                <rect
+                  width="18"
+                  height="20"
+                  fill="white"
+                  transform="translate(11 10)"
+                />
+              </clipPath>
+              <clipPath id="clip1_34_2513">
+                <rect
+                  width="18"
+                  height="20"
+                  fill="white"
+                  transform="translate(11 10)"
+                />
+              </clipPath>
+            </defs>
+          </svg>
+        </a>
+        <a href="https://www.linkedin.com/" class="btn">
+          <svg
+            width="40"
+            height="40"
+            viewBox="0 0 40 40"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g clip-path="url(#clip0_34_2519)">
+              <path
+                d="M23.6444 13.0342C20.1556 13.0342 17.2886 15.8618 17.2886 19.379V29.31C17.2886 29.6894 17.5995 29.9997 17.9794 29.9997H21.5718C21.9518 29.9997 22.2627 29.6894 22.2627 29.31V19.6549C22.2627 18.8962 22.8844 18.2756 23.6444 18.2756C24.4043 18.2756 25.0261 18.8962 25.0261 19.6549V29.31C25.0261 29.6894 25.3369 29.9997 25.7169 29.9997H29.3093C29.6893 29.9997 30.0001 29.6894 30.0001 29.31V19.379C30.0001 15.8962 27.1677 13.0342 23.6444 13.0342Z"
+                fill="#505F79"
+              />
+              <path
+                d="M14.2832 16.2764H10.6908C10.3109 16.2764 10 16.5867 10 16.966V29.3108C10 29.6902 10.3109 30.0005 10.6908 30.0005H14.2832C14.6632 30.0005 14.9741 29.6902 14.9741 29.3108V16.966C14.9741 16.5867 14.6632 16.2764 14.2832 16.2764Z"
+                fill="#505F79"
+              />
+              <path
+                d="M12.487 10C11.1054 10 10 11.1034 10 12.4828C10 13.8621 11.1054 14.9655 12.487 14.9655C13.8687 14.9655 14.9741 13.8621 14.9741 12.4828C14.9741 11.1034 13.8687 10 12.487 10Z"
+                fill="#505F79"
+              />
+            </g>
+            <defs>
+              <clipPath id="clip0_34_2519">
+                <rect
+                  width="20"
+                  height="20"
+                  fill="white"
+                  transform="translate(10 10)"
+                />
+              </clipPath>
+            </defs>
+          </svg>
+        </a>
+        <a href="https://angel.co/" class="btn">
+          <svg
+            width="40"
+            height="40"
+            viewBox="0 0 40 40"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g clip-path="url(#clip0_34_2529)">
+              <path
+                d="M19.4643 30C24.1609 30 27.0834 26.5392 27.0834 22.0742C27.0834 20.3908 26.8093 18.8708 24.8984 18.4142C25.3634 17.1408 26.7051 13.4575 26.7051 12.2775C26.7051 11.2383 26.0801 10.3675 24.9659 10.3675C23.1901 10.3675 21.5984 15.5117 21.1001 16.7383C20.7143 15.625 18.9076 10 17.3151 10C16.0776 10 15.4968 10.8942 15.4968 12.0192C15.4968 13.3983 16.8576 16.9725 17.3509 18.3475C17.1009 18.2575 16.8301 18.1792 16.5543 18.1792C15.6226 18.1792 14.6318 19.3158 14.6318 20.2342C14.6318 20.5817 14.8268 21.07 14.9501 21.3942C13.4818 21.785 12.9168 22.7458 12.9168 24.195C12.9126 27.015 15.6359 30 19.4643 30ZM23.4893 14.2192C23.6493 13.7383 24.3293 11.7075 24.9659 11.7075C25.3084 11.7075 25.4001 12.055 25.4001 12.3325C25.4001 13.0783 23.8643 17.2 23.5251 18.1133L22.1718 17.8792L23.4893 14.2192ZM16.7468 11.8875V11.8867C16.7468 11.4217 17.3243 10.1017 18.5893 13.7267L19.9668 17.645C19.3459 17.5942 18.8643 17.5275 18.5584 17.7C18.1243 16.575 16.7468 13.0242 16.7468 11.8875ZM16.6551 19.5308L16.6559 19.5317C17.8218 19.5317 19.3268 23.2267 19.3268 23.7267C19.3268 23.9258 19.1318 24.1717 18.9051 24.1717C18.0726 24.1717 15.8434 21.1675 15.8434 20.355C15.8468 20.0542 16.3484 19.5308 16.6551 19.5308ZM15.3151 22.5892C15.7684 22.5892 17.4759 24.945 17.4759 25.445C17.4759 25.6367 17.1693 25.7692 17.0109 25.7692C16.3701 25.7692 16.1193 25.1633 14.9776 23.7617C13.7951 24.9217 15.7934 27.1558 17.2984 27.1558C18.3368 27.1558 19.0134 26.2108 18.8109 25.515C18.9584 25.515 19.1409 25.5267 19.2768 25.4917C19.3209 26.55 19.6393 27.8117 20.9368 27.9017C20.9368 27.8667 21.0168 27.6242 21.0168 27.6125C21.0168 26.9325 20.5951 26.3392 20.5951 25.6475C20.5951 24.5417 21.4584 23.4717 22.3343 22.8467C22.6526 22.6125 23.0393 22.4675 23.4126 22.335C23.7993 22.1908 24.2093 22.0225 24.5026 21.7333C24.4584 21.2958 24.2759 20.9092 23.8301 20.9092C22.7276 20.9092 19.0301 21.0658 19.0301 19.3583C19.0301 19.0967 19.0343 18.8467 19.7234 18.8467C21.0093 18.8467 24.2734 19.1592 25.2284 19.9833C25.9484 20.6125 26.1959 24.405 23.9943 26.8075L23.9918 26.8083C22.8334 28.0583 21.3526 28.7067 19.6251 28.7067C17.2609 28.7067 15.3934 27.4333 14.4943 25.2575C13.8134 23.5625 14.6459 22.5892 15.3151 22.5892ZM20.0659 21.8858C20.4534 22.0075 20.8509 22.0433 21.2493 22.1208C20.9543 22.3317 20.6926 22.59 20.4409 22.8667C20.3293 22.535 20.1934 22.2108 20.0659 21.8858Z"
+                fill="#505F79"
+              />
+            </g>
+            <defs>
+              <clipPath id="clip0_34_2529">
+                <rect
+                  width="20"
+                  height="20"
+                  fill="white"
+                  transform="translate(10 10)"
+                />
+              </clipPath>
+            </defs>
+          </svg>
+        </a>
+        <a href="https://twitter.com/" class="btn">
+          <svg
+            width="40"
+            height="40"
+            viewBox="0 0 40 40"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g clip-path="url(#clip0_34_2533)">
+              <g clip-path="url(#clip1_34_2533)">
+                <path
+                  d="M29.7662 10.37C29.4329 9.97134 28.8662 9.87167 28.4329 10.1707L26.4996 11.4996C25.5996 10.5361 24.3329 10.0046 22.9662 10.0046C20.2662 10.0046 18.0329 12.1972 18.0329 14.9215C18.0329 15.3202 18.0662 15.6856 18.1662 16.0511C15.8329 15.5527 14.4329 13.8584 13.8996 10.8019C13.8329 10.4032 13.5329 10.1042 13.1329 10.0046C12.7662 9.90489 12.3662 10.071 12.1329 10.37C12.0662 10.4365 6.56622 18.0776 14.5329 24.556C13.7662 26.1839 11.4662 27.5793 10.5662 28.0444C10.1329 28.2437 9.93289 28.7088 10.0329 29.1739C10.1329 29.6391 10.5329 29.9381 10.9996 29.9381H12.7329C22.8662 29.9381 27.4662 24.9215 27.5662 13.6923L29.6662 11.6989C30.0662 11.3667 30.0996 10.7687 29.7662 10.37Z"
+                  fill="#505F79"
+                />
+              </g>
+            </g>
+            <defs>
+              <clipPath id="clip0_34_2533">
+                <rect
+                  width="20"
+                  height="20"
+                  fill="white"
+                  transform="translate(10 10)"
+                />
+              </clipPath>
+              <clipPath id="clip1_34_2533">
+                <rect
+                  width="20"
+                  height="19.9667"
+                  fill="white"
+                  transform="translate(10 9.97168)"
+                />
+              </clipPath>
+            </defs>
+          </svg>
+        </a>
+        <a href="https://medium.com/" class="btn">
+          <svg
+            width="40"
+            height="40"
+            viewBox="0 0 40 40"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M28.4042 13.8804L30 12.3377V12H24.4717L20.5317 21.9099L16.0492 12H10.2525V12.3377L12.1167 14.6055C12.2983 14.7731 12.3933 15.0181 12.3692 15.2648V24.1768C12.4267 24.4977 12.3233 24.8278 12.1 25.0611L10 27.6328V27.9663H15.9542V27.6286L13.8542 25.0611C13.6267 24.8269 13.5192 24.5027 13.565 24.1768V16.4682L18.7917 27.9705H19.3992L23.8933 16.4682V25.6312C23.8933 25.8728 23.8933 25.9225 23.7367 26.0808L22.12 27.6615V28H29.9633V27.6623L28.405 26.1204C28.2683 26.016 28.1975 25.8408 28.2267 25.6707V14.3301C28.1975 14.1592 28.2675 13.984 28.4042 13.8804Z"
+              fill="#505F79"
+            />
+          </svg>
+        </a>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
