@@ -16,7 +16,7 @@
     <header class="header">
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
+          <a class="navbar-brand d-none" href="#">Navbar</a>
           <button
             class="navbar-toggler"
             type="button"
@@ -29,32 +29,23 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
+            <ul class="navbar-nav col justify-content-center">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link" href="#">Portfolio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Features</a>
+                <a class="nav-link" href="#">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Pricing</a>
-              </li>
-              <li class="nav-item">
-                <a
-                  class="nav-link disabled"
-                  href="#"
-                  tabindex="-1"
-                  aria-disabled="true"
-                  >Disabled</a
-                >
+                <a class="nav-link" href="#">Contact</a>
               </li>
             </ul>
           </div>
         </div>
       </nav>
     </header>
-    <div class="card">
-      <div class="card-body text-center">
+    <div class="card card--bg--image">
+      <div class="card-body text-center m-5">
         <h1 class="card-title">
           Hey there. I'm Alex. <br />
           I'm a software developer
@@ -213,7 +204,31 @@
           </a>
         </div>
       </div>
-      <a href="#" class="btn btn-primary">Go somewhere</a>
+      <a href="#" class="btn"
+        ><svg
+          width="920"
+          height="114"
+          viewBox="0 0 920 114"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <rect x="440" y="50" width="40" height="40" rx="20" fill="white" />
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M453.293 66.2929C453.683 65.9024 454.317 65.9024 454.707 66.2929L460 71.5858L465.293 66.2929C465.683 65.9024 466.317 65.9024 466.707 66.2929C467.098 66.6834 467.098 67.3166 466.707 67.7071L460.707 73.7071C460.317 74.0976 459.683 74.0976 459.293 73.7071L453.293 67.7071C452.902 67.3166 452.902 66.6834 453.293 66.2929Z"
+            fill="#172B4D"
+          />
+          <rect
+            x="440"
+            y="50"
+            width="40"
+            height="40"
+            rx="20"
+            stroke="#DFE1E6"
+          />
+        </svg>
+      </a>
     </div>
     <section id="work">
       <h2>My Recent Works</h2>
@@ -649,14 +664,13 @@
                 aria-label="Last name"
               />
             </div>
-            <div class="form-floating col-12">
+            <div class="col-12">
               <textarea
                 class="form-control"
                 placeholder="Leave a comment here"
                 id="floatingTextarea2"
                 style="height: 100px"
               ></textarea>
-              <label for="floatingTextarea2">Comments</label>
             </div>
             <button type="submit" class="btn btn-success col-3 ms-2">
               Get in touch
@@ -666,6 +680,7 @@
       </div>
     </section>
     <footer>
+      <hr />
       <div class="social text-center">
         <a href="https://github.com/" class="btn">
           <svg

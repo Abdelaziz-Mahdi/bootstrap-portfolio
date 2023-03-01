@@ -1,3 +1,10 @@
 .header {
   color: olive;
 }
+
+.card--bg--image {
+  background-image: url(./img/Header-llustration-desktop.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 8% 15%;
+}
